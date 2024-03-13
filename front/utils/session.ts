@@ -26,7 +26,7 @@ export async function updateUser(user: Partial<User>) {
 }
 
 export async function requestAPI<T>(path: string, options: RequestInit = {}) {
-  await new Promise((resolved) => setTimeout(resolved, 1500));
+  // await new Promise((resolved) => setTimeout(resolved, 1500));
   const token = cookies().get("token");
 
   if (!token) {
